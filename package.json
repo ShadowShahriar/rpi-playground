@@ -1,0 +1,32 @@
+{
+	"name": "rpi-playground",
+	"version": "1.0.0",
+	"description": "A repository to showcase all my Raspberry Pi 5 experiments and discoveries.",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "node ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ShadowShahriar/rpi-playground.git"
+	},
+	"keywords": [
+		"raspberrypi",
+		"pi5",
+		"pios",
+		"javascript"
+	],
+	"author": "S. Shahriar <shadowshahriar@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ShadowShahriar/rpi-playground/issues"
+	},
+	"homepage": "https://github.com/ShadowShahriar/rpi-playground#readme",
+	"devDependencies": {
+		"@types/node": "^22.13.14"
+	},
+	"dependencies": {
+		"node-libgpiod": "^0.4.6"
+	}
+}
