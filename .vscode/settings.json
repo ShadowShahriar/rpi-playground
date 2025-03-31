@@ -11,6 +11,8 @@
 		"**/.gitignore": true,
 		"**/desktop.ini": true,
 		"package-lock.json": true,
+		"node_modules": true,
+		"LICENSE": true,
 		".old": true
 	}
 }
