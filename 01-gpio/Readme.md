@@ -36,7 +36,7 @@ setInterval(_ => digitalWrite(27, z++ % 2), 400)
 
 ## Installation
 
-Raspberry Pi OS is Debian based. So, [**according to the documentation**][DEBINS], we need to install the following dependencies:
+Raspberry Pi OS is Debian-based. So, [**according to the documentation**][DEBINS], we need to install the following dependencies:
 
 ```bash
 sudo apt install gpiod libgpiod2 libgpiod-dev libnode-dev
