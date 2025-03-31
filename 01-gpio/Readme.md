@@ -1,4 +1,4 @@
-# rpi-playground / 01-gpio
+# rpi-playground / gpio
 
 Since I have used Arduino microcontrollers in the past and have quite a bit of familarity with the Arduino ecosystem, I wanted to use the same Arduino methods to access Raspberry Pi's GPIO pins. I used the [**node-libgpiod**][LIB] library to do that in JavaScript.
 
@@ -7,7 +7,34 @@ Here is my attempt to implement `pinMode`, `digitalRead`, and `digitalWrite` met
 > [!IMPORTANT]
 > Node.js **v20.15.1** is required.
 
-## Installing the dependencies
+## Sample Project
+
+📌 [**Video demo here**](https://www.threads.net/@shadowshahriar/post/DH3fF9vSiRl)
+
+### Code
+
+```javascript
+import { GPIO, digitalWrite, OUTPUT } from './lib.js'
+
+// === initialize GPIO 17, 18, and 27 as OUTPUT ===
+GPIO(17, OUTPUT)
+GPIO(18, OUTPUT)
+GPIO(27, OUTPUT)
+
+let x = 0
+let y = 0
+let z = 0
+
+setInterval(_ => digitalWrite(17, x++ % 2), 1000)
+setInterval(_ => digitalWrite(18, y++ % 2), 700)
+setInterval(_ => digitalWrite(27, z++ % 2), 400)
+```
+
+### Circuit Diagram
+
+![Connection diagram of the multiblink project](./diagram.png)
+
+## Installation
 
 Raspberry Pi OS is Debian based. So, [**according to the documentation**][DEBINS], we need to install the following dependencies:
 
