@@ -37,7 +37,7 @@ const GPIO(pin: number, mode?: string, val?: number): void
 | `mode`    | Pin operation, can be either **INPUT** or **OUTPUT**.                                                                                                                                                                                                                |
 | `val`     | 📌 When initialized as an **OUTPUT**, the `val` indicates the default value of the pin (**HIGH** or **LOW**).<br>📌 When initialized as an **INPUT**, the `val` can be optionally set to **INPUT_PULLUP** or **INPUT_PULLDOWN** to utilize those internal resistors. |
 
-## purgeGPIO
+### purgeGPIO
 
 Release the GPIO pin to free resources.
 
@@ -51,7 +51,7 @@ const purgeGPIO(pin: number): boolean
 
 According to the [**sample code**][SAMPLE], this is **NOT** needed as `libgpiod` releases resources on process exit.
 
-## digitalRead
+### digitalRead
 
 ```typescript
 const digitalRead(pin: number): number | null
@@ -61,7 +61,7 @@ const digitalRead(pin: number): number | null
 | :-------- | :------------------------------------------------------------- |
 | `pin`     | Raspberry Pi's GPIO pin number. (see [**pinout.xyz**][PINOUT]) |
 
-## digitalWrite
+### digitalWrite
 
 ```typescript
 const digitalWrite(pin: number, val: number): boolean
