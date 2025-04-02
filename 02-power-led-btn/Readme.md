@@ -1,6 +1,6 @@
 # rpi-playground / power-led-btn
 
-Although Raspberry Pi 5 has a built-in power button and LED, their placement makes them harder to access if I integrate my Pi into a larger project. Plus, there are no GPIO pins available to access the power button or the LED directly.
+Although Raspberry Pi 5 has a built-in power button and LED, their placement makes them harder to access if I integrate my Pi into a larger project. Plus, there are no GPIO pins available to access the power button or the LED directly. So, I made my own power button with two LED indicators.
 
 > [!IMPORTANT]
 > Tested on Python **v3.11.2**.
