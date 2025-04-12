@@ -27,6 +27,11 @@
 		"@types/node": "^22.13.14"
 	},
 	"dependencies": {
-		"node-libgpiod": "^0.4.6"
+		"canvas": "^3.1.0",
+		"i2c-bus": "^5.2.3",
+		"node-libgpiod": "^0.4.6",
+		"oled-font-5x7": "^1.0.3",
+		"oled-font-pack": "^1.0.1",
+		"oled-rpi-i2c-bus": "^1.1.4"
 	}
 }
